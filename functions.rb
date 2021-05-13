@@ -22,3 +22,8 @@ end
 greeter = Greeter.new("Pat")
 greeter.say_hi
 greeter.say_bye
+puts Greeter.instance_methods(false)
+
+class Greeter
+  attr_accessor :name
+end
